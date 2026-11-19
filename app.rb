@@ -18,3 +18,10 @@ class App < Sinatra::Base
     end
 
 end
+
+get '/todos/:id' do
+    id = params[:id]
+    @todo = db.execute('SELECT * FROM todos WHERE id = ?', [id]).first
+
+    erb(:'todos/index')
+end

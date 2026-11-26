@@ -1,0 +1,19 @@
+<h2>Uppdatera ToDos</h2>
+
+<form action="/todos/<%= @todo['id'] %>/edit" method="post">
+  <label>
+    ToDos
+    <input type="text" name="todo_name" value="<%= @todo['name'] %>" required>
+  </label>
+
+  <label>
+    Beskrivning
+    <input type="text" name="todo_description" value="<%= @todo['description'] %>">
+  </label>
+
+  <label>
+    Färdig
+    <input type="checkbox" name="todo_completed" value="1" <%= @todo['completed'] == 1 ? 'checked' : '' %>>
+  </label>
+
+  <input type="submit" value="Uppdatera">

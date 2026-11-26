@@ -6,7 +6,26 @@
     <title>Todolistan</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
-<body>
-  <%= yield %>
+
+ <body>
+    <header>
+
+        <h1 class="logo">Todolistan</h1>
+    </header>
+    <hr>
+    <nav>
+
+          <a href="/">Todos</a>
+          <a href="/todos/new">Ny Todo</a>
+          <a href="/categories">Alla kategorier</a>
+
+    </nav>
+    <hr>
+    <%= yield %>
+    <hr>
+    <footer>
+        <p>Kontakta oss</p>
+    </footer>
 </body>
+
 </html>

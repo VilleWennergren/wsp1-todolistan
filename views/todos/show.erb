@@ -1,0 +1,9 @@
+<h2><%= @todo['name'] %></h2>
+
+<p>Beskrivning: <%= @todo['description'] %></p>
+
+<p>
+  Färdig: <%= @todo['completed'] == 1 ? 'Ja' : 'Nej' %>
+</p>
+
+<p><a href="/">Till alla Todos</a></p>

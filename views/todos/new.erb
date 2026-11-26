@@ -1,0 +1,21 @@
+<h2>Ny Todo</h2>
+
+<form action="/todos/new" method="post">
+
+  <label>
+    Namn
+    <input type="text" name="todo_name" required>
+  </label>
+
+  <label>
+    Beskrivning
+    <input type="text" name="todo_description">
+  </label>
+
+  <label>
+    Färdig?
+    <input type="checkbox" name="todo_completed" value="1">
+  </label>
+
+  <input type="submit" value="Spara">
+</form> 
